@@ -17,6 +17,7 @@
 
 find [where-to-search] [criteria] [action] 
 
-find /var/log/myapp -name "*.log" -mtime +30 -exec rm -f {} \;
+find /var/log/myapp -name "*.log" -mtime +30 -exec rm -f {} \; 
 find /var/www/html -type d -exec chmod 755 {} \;
 find /home/neha/projects -name "*.tar" -exec gzip {} \;
+find /var -type f -size +500M
