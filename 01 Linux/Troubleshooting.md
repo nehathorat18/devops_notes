@@ -13,3 +13,10 @@
 | Network | `ping`, `curl`, `nc` |
 | DNS | `nslookup`, `dig` |
 | Permissions | `ls -l`, `chmod`, `chown` |
+
+
+find [where-to-search] [criteria] [action] 
+
+find /var/log/myapp -name "*.log" -mtime +30 -exec rm -f {} \;
+find /var/www/html -type d -exec chmod 755 {} \;
+find /home/neha/projects -name "*.tar" -exec gzip {} \;
